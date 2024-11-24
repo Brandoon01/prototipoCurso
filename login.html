@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techplay</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" href="img/logo.jpg" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-in">
+            <form action="php/login.php" method="post">
+                <h1>Iniciar sesión</h1>
+                <samp>use su correo y contraseña</samp>
+                <input type="email" name="email" placeholder="email" required>
+                <input type="password" name="contraseña" placeholder="Password" required>
+                <a href="recuperar_clave.php" class="fp">¿Olvidar contraseña?</a>
+                <button type="submit"> INGRESAR</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-right">
+                    <h2>Hola, Amigo!</h2>
+                    <p>Queremos darte la bienvenida a Techplay que disfrutes de todo lo que tenemos para ofrecerte
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="java/script.js"></script>
+</body>
+
+</html>
