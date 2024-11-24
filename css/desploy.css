@@ -1,0 +1,336 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #E8F0F2, #D0E4E5); /* Fondo degradado */
+    color: #03363D;
+}
+
+h1 {
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sombra de texto */
+}
+h2 {
+    text-align: center;
+    color: #03363D;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sombra de texto */
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: transform 0.3s; /* Animación de transformación */
+}
+
+.container:hover {
+    transform: scale(1.02); /* Efecto hover */
+}
+
+form {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #F0F7F9; /* Fondo claro */
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #03363D;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #174D4D;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="file"]:focus,
+select:focus {
+    border-color: #1C7C7D; /* Cambio de color en foco */
+    outline: none;
+}
+
+button {
+    background-color: #03363D;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #1C7C7D;
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #174D4D;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+tr:hover {
+    background-color: #F0F7F9; /* Fondo claro en hover */
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* Posicionar la imagen de perfil a la izquierda */
+.profile-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #174D4D;
+}
+
+/* Estilo del header */
+header {
+    margin-left: 140px;
+    text-align: center;
+    background-color: #03363D;
+    color: #FFFFFF;
+    padding: 10px 0;
+}
+
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+    flex: 1;
+}
+
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1C7C7D;
+}
+
+main {
+    padding: 20px;
+}
+
+main section {
+    margin-bottom: 20px;
+}
+
+main h2 {
+    border-bottom: 2px solid #03363D;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #03363D;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 50px;
+    background: #174D4D;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 25px;
+    z-index: 1;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #F8F9F9;
+}
+
+nav span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(45deg, #03363D, #174D4D);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+nav a:nth-child(1):hover ~ span { left: 0; }
+nav a:nth-child(2):hover ~ span { left: 120px; }
+nav a:nth-child(3):hover ~ span { left: 240px; }
+nav a:nth-child(4):hover ~ span { left: 360px; }
+nav a:nth-child(5):hover ~ span { left: 480px; }
+
+/* Estilo del botón de subir entrega */
+.upload-btn {
+    background: linear-gradient(135deg, #1C7C7D, #03363D); /* Degradado de fondo */
+    color: #FFFFFF;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.3s ease; /* Transición suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    position: relative;
+    overflow: hidden;
+}
+
+.upload-btn:hover {
+    background: linear-gradient(135deg, #03363D, #1C7C7D);
+    transform: translateY(-3px); /* Efecto de elevación */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Efecto animado de brillo */
+.upload-btn::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.upload-btn:hover::before {
+    opacity: 0.3;
+    transform: translateX(200%) rotate(45deg);
+}
+
+/* Adaptación del botón en pantallas pequeñas */
+@media (max-width: 768px) {
+    .upload-btn {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+.back-button {
+    margin: 20px 0;
+}
+
+.back-link {
+    font-size: 18px;
+    color: #03363D;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    margin-right: 8px;
+}
+.forum-button-container {
+    text-align: right;
+    margin: 20px 0;
+}
+
+.forum-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #03363D; /* Color de tu paleta */
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.forum-button:hover {
+    background-color: #174D4D; /* Cambio de color al pasar el mouse */
+}

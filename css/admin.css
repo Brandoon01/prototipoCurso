@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Estilo del header */
+header {
+    background: #333;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+    flex: 1;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo del main */
+main {
+    padding: 20px;
+}
+
+main section {
+    margin-bottom: 20px;
+}
+
+main h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+}
+
+/* Estilo del footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+nav{
+    position: relative;
+    width: 200%;
+    max-width: 500px;
+    height: 150px;
+    background: #222;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+nav a{
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    padding: 0 23px;
+    z-index: 1;
+}
+nav span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95px;
+    height: 100%;
+    background: linear-gradient(45deg, #194b4f,#33fffc);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+nav a:nth-child(1):hover~span{
+    left: 10px;
+}
+nav a:nth-child(2):hover~span{
+    left: 120px;
+}
+nav a:nth-child(3):hover~span{
+    left: 230px;
+}
+nav a:nth-child(4):hover~span{
+    left: 350px;
+}
+nav a:nth-child(5):hover~span{
+    left: 378px;
+}
+
+
+.virtual-classroom {
+    background-color: #f9f9f9; /* Color de fondo claro */
+    padding: 40px 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.virtual-classroom h2 {
+    font-size: 24px; /* Tamaño de encabezado */
+    text-align: center; /* Centrado */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.virtual-classroom p {
+    font-size: 16px; /* Tamaño del texto */
+    text-align: center; /* Centrado */
+    margin-bottom: 30px; /* Espacio debajo del párrafo */
+}
+
+.features-grid {
+    display: flex; /* Usar flexbox */
+    justify-content: space-around; /* Espaciado entre elementos */
+    flex-wrap: wrap; /* Permitir que los elementos se muevan a la siguiente línea si es necesario */
+}
+
+.feature {
+    background-color: #ffffff; /* Fondo blanco para cada característica */
+    border: 1px solid #ccc; /* Bordes grises */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin: 10px; /* Margen entre características */
+    flex: 1 1 200px; /* Crecimiento y encogimiento flexible */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    text-align: center; /* Centrado del texto */
+}
+
+.feature h3 {
+    font-size: 18px; /* Tamaño del encabezado de características */
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+.feature p {
+    font-size: 14px; /* Tamaño del texto de las características */
+    line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
+}
+
+/* Estilo para la barra de navegación de pestañas */
+.tabs {
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+    padding: 0;
+    margin: 20px auto;
+    border-bottom: 10px solid #d42929;
+    background-color: #1a0fa7;
+    width: 100%;
+    max-width: 600px;
+}
+
+.tabs li {
+    margin: 0 25px;
+}
+
+.tabs a {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    color: #3b3131;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.tabs li.active a, 
+.tabs li a:hover {
+    border-bottom: 3px solid #383d42;
+    color: #687480;
+}
+
+.course-info {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.course-button {
+    padding: 20px 30px;
+    margin: 10px;
+    border: none;
+    background-color: #ddd;
+    color: #000000;
+    cursor: pointer;
+}
+
+.bienvenido {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.bienvenido h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.management-tools {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.management-button {
+    background-color: #271e1e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.management-button:hover {
+    background-color: #815a5a;
+}
+
+        nav {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 475px;
+            background: #222;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 50px;
+        }
+
+        nav a {
+            position: relative;
+            display: inline-block;
+            font-size: 1em;
+            font-weight: 500;
+            color: white;
+            text-decoration: none;
+            padding: 0 23px;
+            z-index: 1;
+        }
+
+        nav span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 95px;
+            height: 100%;
+            background: linear-gradient(45deg, #194b4f,#33fffc);
+            border-radius: 10px;
+            transition: 0.5s;
+        }
+
+        nav a:hover ~ span {
+            left: 0;
+        }
+
+        main {
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"]:hover {
+            background: #4cae4c;
+        }
+
+        .mensaje {
+            color: green;
+            margin: 10px 0;
+        }
+
+        .error {
+            color: red;
+        }

@@ -1,0 +1,243 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F8F9F9; /* Color del fondo */
+    color: #03363D; /* Color principal del texto */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Título */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #174D4D;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid #03363D;
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor de mensajes */
+.forum-messages {
+    max-width: 800px;
+    margin: 10px auto;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+/* Mensaje individual */
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #174D4D;
+    border-radius: 5px;
+    background-color: #F8F9F9;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.message:hover {
+    background-color: #EAF4F4;
+}
+
+.message strong {
+    color: #03363D;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+.message p {
+    color: #174D4D;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.message span {
+    font-size: 0.8rem;
+    color: #777;
+    align-self: flex-end;
+}
+
+/* Formulario de mensajes */
+.message-form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message-form textarea {
+    width: 100%;
+    height: 50px;
+    resize: none;
+    padding: 8px;
+    font-size: 0.9rem;
+    border: 1px solid #174D4D;
+    border-radius: 6px;
+    outline: none;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.message-form textarea:focus {
+    box-shadow: 0 0 5px #03363D;
+    border-color: #03363D;
+}
+
+.message-form button {
+    align-self: flex-end;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    color: #FFFFFF;
+    background-color: #03363D;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.message-form button:hover {
+    background-color: #174D4D;
+}
+
+/* Estilo de desplazamiento para contenedor de mensajes */
+.forum-messages::-webkit-scrollbar {
+    width: 8px;
+}
+
+.forum-messages::-webkit-scrollbar-thumb {
+    background: #03363D;
+    border-radius: 6px;
+}
+
+.forum-messages::-webkit-scrollbar-track {
+    background: #EAF4F4;
+}
+
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    transition: color 0.5s ease;
+}
+
+h2 {
+    text-align: center;
+    color: #03363D;
+    transition: color 0.5s ease;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+
+/* Animación de entrada para los mensajes */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Estilo para la imagen de perfil */
+.profile-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #174D4D;
+}
+
+/* Estilo del header */
+header {
+    margin-left: 140px;
+    text-align: center;
+    background-color: #03363D;
+    color: #FFFFFF;
+    padding: 15px 0;
+    transition: background-color 0.5s ease;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 50px;
+    background: #174D4D;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+nav a {
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 25px;
+    z-index: 1;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #F8F9F9;
+    font-size: 1.1em;
+}
+
+nav span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(45deg, #03363D, #174D4D);
+    border-radius: 10px;
+    transition: left 0.5s, width 0.3s ease;
+}
+
+nav a:nth-child(1):hover ~ span { left: 0; width: 120px; }
+nav a:nth-child(2):hover ~ span { left: 120px; width: 120px; }
+nav a:nth-child(3):hover ~ span { left: 240px; width: 120px; }
+nav a:nth-child(4):hover ~ span { left: 360px; width: 120px; }
+nav a:nth-child(5):hover ~ span { left: 480px; width: 120px; }

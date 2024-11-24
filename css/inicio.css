@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #F8F9F9; /* Light background color */
+    color: #03363D; /* Dark text color */
+}
+
+/* Posicionar la imagen de perfil a la izquierda */
+.profile-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #174D4D;
+}
+
+/* Estilo del header */
+header {
+    margin-left: 140px;
+    text-align: center;
+    background-color: #03363D;
+    color: #FFFFFF;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navbar styling with hover effect and animated underline */
+nav {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 50px;
+    background: #174D4D;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 25px;
+    z-index: 1;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #F8F9F9;
+}
+
+nav span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(45deg, #03363D, #174D4D);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+nav a:nth-child(1):hover ~ span { left: 0; }
+nav a:nth-child(2):hover ~ span { left: 120px; }
+nav a:nth-child(3):hover ~ span { left: 240px; }
+nav a:nth-child(4):hover ~ span { left: 360px; }
+nav a:nth-child(5):hover ~ span { left: 480px; }
+
+main {
+    padding: 20px;
+}
+
+.virtual-classroom {
+    background-color: #FFFFFF;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.virtual-classroom h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #03363D;
+}
+
+.virtual-classroom p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #03363D;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background-color: #F8F9F9;
+    border: 1px solid #174D4D;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #03363D;
+}
+
+.feature p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #174D4D;
+}
+
+footer {
+    background: #03363D;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

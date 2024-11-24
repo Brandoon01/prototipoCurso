@@ -1,0 +1,177 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #F8F9F9;
+    background-color: #03363D;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #174D4D;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 80px;
+}
+
+.icons a {
+    color: #F8F9F9;
+    margin-right: 15px;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.icons a:hover {
+    color: #FFFFFF;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("img/mando.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #F8F9F9;
+}
+
+.btn {
+    background-color: #174D4D;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #03363D;
+}
+
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.schools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.school {
+    background-color: #174D4D;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.school:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.school img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.school h3 {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #F8F9F9;
+}
+
+.benefits {
+    padding: 50px 20px;
+    background-color: #03363D;
+}
+
+.benefits h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.benefits-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.benefit {
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
+    background-color: #174D4D;
+    border: 1px solid #03363D;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.benefit:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.benefit img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.benefit h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.benefit p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #F8F9F9;
+}
